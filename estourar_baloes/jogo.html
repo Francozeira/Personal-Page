@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <title>Estourando balões</title>
+
+    <script src="jogo.js"></script>
+  </head>
+
+  <body onload="iniciaJogo()">
+    <div id="pagina_inicial" class="container">
+      <div class="page-header">
+        <h1>Baloon Popping</h1>
+      </div>
+
+      <div class="col-xs-6 col-xs-offset-3 text-center">
+        <div
+          style="float: left; width: auto; height: 500px; background: #FFF; border: solid 1px #a2a2a2"
+        >
+          <table border="0">
+            <tr>
+              <td>
+                <img src="imagens/balao_azul_grande.png" />
+              </td>
+              <td>
+                <span id="baloesInteiros" style="font-size: 40px"></span>
+              </td>
+            </tr>
+          </table>
+
+          <br />
+
+          <table border="0">
+            <tr>
+              <td>
+                <img src="imagens/balao_azul_grande_estourado.png" />
+              </td>
+              <td>
+                <span id="baloesEstourados" style="font-size: 40px"></span>
+              </td>
+            </tr>
+          </table>
+
+          <br />
+
+          <table border="0" style=" height: 132px; width: 140px;">
+            <tr>
+              <td
+                style="background: url('imagens/cronometro.png'); text-align: center;	"
+              >
+                <span
+                  id="cronometro"
+                  style="color: red; font-size: 30px; "
+                ></span>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <div
+          id="cenario"
+          style="float: left; height: 500px; width: 600px; background: url('imagens/cenario.png'); background-position: bottom;"
+        ></div>
+      </div>
+    </div>
+  </body>
+</html>

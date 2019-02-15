@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />    
+    <title>Jogo da Velha</title>
+
+    <!-- scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" integrity="sha384-PmY9l28YgO4JwMKbTvgaS7XNZJ30MK9FAZjjzXtlqyZCqBY6X6bXIkM++IkyinN+" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js" integrity="sha384-vhJnz1OVIdLktyixHY4Uk3OHEwdQqPppqYR8+5mjsauETgLOcEynD9oPHhhz18Nw" crossorigin="anonymous"></script>
+    <script src="jogo.js"></script>
+    <link rel="stylesheet" type="text/css" href="estilo.css" />
+  </head>
+
+  <body>
+    <div id="pagina_inicial" class="container">
+
+      <div class="page-header">
+        <h1>Jogo Da Velha</h1>
+      </div>
+
+      <div align="center">
+        <table id="painel_do_jogo">
+          <tbody>
+              <tr>
+                <h2><strong>Select your player:</strong></h2>
+              </tr>
+
+            <tr>
+              <td>
+                <span class="glyphicon glyphicon-king" style="color: red; font-size: 100px;" >
+                </span>
+                <br>
+                <input id="info_player_1" type="text" size="10px" placeholder="Player 1" maxlength="10" style="border: none">
+              </td>
+
+              <td>
+                  <span id="btn_start" class="startClass transform glyphicon glyphicon-play-circle">
+                  </span>
+              </td>
+        
+              <td>
+                <span class="glyphicon glyphicon-queen" style="color: blue; font-size: 100px;">
+                </span>
+                <br>
+                <input id="info_player_2" type="text" size="10px" placeholder="Player 2" maxlength="10" style="border: none">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <div style="display: none;" id="palco_do_jogo">
+          <div style="display: inline-block; ">
+            <span class="glyphicon glyphicon-king" style="color: red; font-size: 100px; margin: 25px;" >
+            </span>
+            <br>
+            <span id="nome_jogador_1" style="padding: 5px"></span>
+          </div>
+
+          <div style="display: inline-block;">
+            <table>
+              <tr>
+                <td style="border-bottom: 1px solid dimgrey; border-right: 1px solid dimgrey">
+                  <div class="jogada" id="a-1"style="height: 100px; width: 100px"></div>
+                </td>
+
+                <td style="border-bottom: 1px solid dimgrey; border-right: 1px solid dimgrey">
+                  <div class="jogada" id="a-2" style="height: 100px; width: 100px"></div>
+                </td>                
+                
+                <td style=" border-bottom: 1px solid dimgrey">
+                    <div class="jogada" id="a-3" style="height: 100px; width: 100px"></div>
+                </td>                
+              </tr>
+
+              <tr>
+                  <td>
+                    <div class="jogada" id="b-1" style="height: 100px; width: 100px"></div>
+                  </td>
+
+                  <td style="border-left: 1px solid dimgrey; border-right: 1px solid dimgrey">
+                      <div class="jogada" id="b-2" style="height: 100px; width: 100px"></div>
+                  </td>  
+
+                  <td>
+                    <div class="jogada" id="b-3" style="height: 100px; width: 100px"></div>
+                  </td>                  
+              </tr>
+
+              <tr>
+                  <td style="border-top: 1px solid dimgrey; border-right: 1px solid dimgrey">
+                      <div class="jogada" id="c-1" style="height: 100px; width: 100px"></div>
+                    </td>
+    
+                    <td style="border-top: 1px solid dimgrey; border-right: 1px solid dimgrey">
+                      <div class="jogada" id="c-2" style="height: 100px; width: 100px"></div>
+                    </td>                
+                    
+                    <td style=" border-top: 1px solid dimgrey">
+                        <div class="jogada" id="c-3" style="height: 100px; width: 100px"></div>
+                    </td>
+              </tr>
+
+            </table>
+          </div>
+
+          <div style="display: inline-block;">
+
+            <span class="glyphicon glyphicon-queen" style="color: blue; font-size: 100px; margin: 25px;">
+            </span>
+            <br>
+            <span id="nome_jogador_2" style="padding: 5px"></span>
+          </div>
+
+          <div>
+            <button id="restart_btn" type="reset" class="btn btn-success"><a href="index.html">Play Again</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

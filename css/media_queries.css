@@ -1,0 +1,56 @@
+/* MEDIA QUERIES FOR SMALL AND EXTRA SMALL DEVICES */
+
+#txt_container1 {
+  width: 100%;
+  text-align: center;
+  padding: 0 0px;
+  margin: 9px 0 0 25%;
+  display: flex;
+}
+
+#txt_container2 {
+  width: 100%;
+  text-align: center;
+  padding: 0 0px;
+  margin: 9px 0 0 10%;
+  display: flex;
+}
+
+input::placeholder {
+  font-size: 11px;
+}
+
+@media screen and (max-width: 650px) {
+  #txt_container1 {
+    margin: 9px 0 0 0%;
+  }
+
+  #txt_container2 {
+    margin: 9px 0 0 0%;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+  span {
+    font-size: 12px;
+    float: left;
+  }
+  input,
+  input::input-placeholder,
+  input::-webkit-input-placeholder,
+  input::-moz-input-placeholder,
+  input:-moz-input-placeholder {
+    font-size: 10;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  #txt_container1 {
+    margin: 9px 2% 0 0%;
+  }
+
+  #txt_container2 {
+    margin: 9px 2% 0 0%;
+  }
+}

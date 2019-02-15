@@ -1,0 +1,53 @@
+.transform {
+    -webkit-transition: all 1s ease;  
+    -moz-transition: all 1s ease;  
+    -o-transition: all 1s ease;  
+    -ms-transition: all 1s ease;  
+    transition: all 1s ease;
+}
+
+.transform-active {
+    color: green;
+}
+
+.startClass{
+    font-size: 125px; 
+    margin: 25px;
+}
+
+.mark_red{
+    background-image: url('img/red_x.png');
+    transform: scale(0.5);
+}
+
+.mark_blue{
+    background-image: url('img/bluecircle.png');
+    transform: scale(0.5);
+}
+
+.player_turn{
+    background:  rgba(6, 156, 6, 0.425);
+}
+
+a:link{
+    color:white;
+}
+/*Visitados*/
+    a:visited{
+    color:white;
+}
+/*MouseOver*/
+    a:hover{
+    color: white;
+    text-decoration: none;
+
+}
+/*Ativos*/
+    a:active{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    padding: 5px;
+}

@@ -1,0 +1,202 @@
+/* layout!! - navbar */
+
+body {
+  background: url("../img/capa.png"), url("img/ruido.png"),
+    linear-gradient(50deg, #ff4169, #7c26f8);
+  background-attachment: fixed;
+  font-family: Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+} 
+
+html, body, .capa {
+  height: 100%;
+  overflow: auto;
+}
+
+.img-logo {
+  height: 40px;
+  width: 132px;
+  display: block;
+  background: url("img/Spotify_logo_with_text.svg") no-repeat;
+  background-size: contain;
+  color: transparent;
+}
+
+nav.navbar-transparent {
+  padding: 15px 0;
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+}
+
+.navbar-brand {
+  padding: 5px 15px;
+}
+
+.divisor {
+  width: 1px;
+  height: 16px;
+  background: white;
+  margin: 16px 10px;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #1db954;
+}
+
+/* layout!! - capa */
+
+.capa {
+  display: table;
+  width: 100%;
+}
+
+.texto-capa {
+  text-align: center;
+  color: white;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* layout!! - botões */
+
+.btn-custom {
+  border-radius: 40px;
+  padding: 10px 35px;
+  text-transform: uppercase;
+  transition: 0.4s;
+  color: white;
+
+}
+
+.btn-purple {
+  background: #7625f8;
+}
+
+.btn-purple:hover {
+    background: #6207b3;
+    color: white;
+
+  }
+
+.btn-white {
+  border: 2px solid white;
+}
+
+.btn-white:hover {
+    background:  white;
+    color: black;
+  }
+
+  /* serviços */
+
+  #servicos{
+    background: white;
+    padding: 20px 0;
+  }
+
+  /* recursos */
+
+  #recursos{
+    padding: 20px 0;
+    color: white;
+    font-size: 14px;
+  }
+
+  .rotacionar{
+    transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    padding-left: 60px;
+  }
+
+/* footer!! */
+
+  footer{
+    background: black;
+    padding: 50px 0px 20px 0px;
+    position: relative;
+
+  }
+
+  .item_social_media{
+    float: right;
+  }
+
+/* tipografia!! */
+
+h1 {
+  font-size: 100px;
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  margin-bottom: 50px;
+}
+
+h2{
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+#servicos h2,#servicos h3 {
+  color: #7625f8;
+}
+
+h3{
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+}
+
+#rodape h4{
+  color: #919496;
+  font-size: 12px;
+}
+
+#recursos h3 {
+  color: #9bf0e1;
+}
+
+footer .nav a {
+  color: white;
+}
+
+footer .nav a:hover {
+  color: #9bf0e1;
+  background: black;
+}
+
+@media screen and (max-width: 767px){
+
+  h1{
+    font-size: 50px;
+  }
+
+  .btn-custom{
+    margin: 16px 16px;
+  }
+
+}
+
+@media screen and (min-width: 768px){
+
+  h1{
+    font-size: 70px;
+  }
+
+}
+
+@media screen and (min-width: 992px){
+
+  h1{
+    font-size: 80px;
+  }
+
+}
+
+@media screen and (min-width: 1200px){
+
+  h1{
+    font-size: 100px;
+  }
+
+}
