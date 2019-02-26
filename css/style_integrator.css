@@ -8,6 +8,13 @@ body {
   overflow-x: hidden;
 } 
 
+h2{
+  color: white;
+}
+
+p{
+  color: white;
+}
 
 #navegacao a:hover {
   color: #CC998D;
