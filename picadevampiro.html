@@ -14,6 +14,61 @@
     ></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" integrity="sha384-PmY9l28YgO4JwMKbTvgaS7XNZJ30MK9FAZjjzXtlqyZCqBY6X6bXIkM++IkyinN+" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js" integrity="sha384-vhJnz1OVIdLktyixHY4Uk3OHEwdQqPppqYR8+5mjsauETgLOcEynD9oPHhhz18Nw" crossorigin="anonymous"></script>
+    <style>
+    .transform {
+    -webkit-transition: all 1s ease;  
+    -moz-transition: all 1s ease;  
+    -o-transition: all 1s ease;  
+    -ms-transition: all 1s ease;  
+    transition: all 1s ease;
+}
+
+.transform-active {
+    color: green;
+}
+
+.startClass{
+    font-size: 125px; 
+    margin: 25px;
+}
+
+.mark_red{
+    background-image: url('img/red_x.png');
+    transform: scale(0.5);
+}
+
+.mark_blue{
+    background-image: url('img/bluecircle.png');
+    transform: scale(0.5);
+}
+
+.player_turn{
+    background:  rgba(6, 156, 6, 0.425);
+}
+
+a:link{
+    color:white;
+}
+/*Visitados*/
+    a:visited{
+    color:white;
+}
+/*MouseOver*/
+    a:hover{
+    color: white;
+    text-decoration: none;
+
+}
+/*Ativos*/
+    a:active{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    padding: 5px;
+}
+    </style>
     <link rel="stylesheet" type="text/css" href="estilo.css" />
   </head>
 
